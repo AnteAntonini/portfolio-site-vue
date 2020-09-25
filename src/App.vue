@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <TheNavigation/>
-    <router-view/>
-    <TheFooter/>
+    <TheNavigation @clicked="onClickChild"/>
+    <router-view v-show="!active"/>
+    <TheFooter v-show="!active"/>
   </div>
 </template>
 
@@ -11,6 +11,11 @@ import TheNavigation from '@/components/TheNavigation'
 import TheFooter from '@/components/TheFooter'
 
 export default {
+  data() {
+    return {
+      active: null
+    }
+  },
   components: {
     TheNavigation,
     TheFooter
@@ -22,6 +27,11 @@ export default {
         header: TheNavigation,
         footer: TheFooter
       }
+    }
+  },
+  methods: {
+    onClickChild(value) {
+      this.active = value
     }
   }
 }
