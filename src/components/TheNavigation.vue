@@ -1,7 +1,7 @@
 <template>
   <div class="navbar-container">
     <div class="menu-btn" @click="open" :class="{active: isActive}">
-      <span class="menu-btn__burger"></span>
+      <span class="menu-btn__burger" :class="{active: isActive}"></span>
     </div>
     <nav class="nav" :class="{active: isActive}">
       <ul class="menu-nav" :class="{active: isActive}">
@@ -129,6 +129,20 @@ li .exact-active  {
       background: set-text-color($primary-color);
       @include transition-ease;
     }
+
+    &.active {
+      transform: rotate(720deg);
+      background: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(5px, 8px);
+      }
+
+      &::after {
+        width: 28px;
+        transform: rotate(-45deg) translate(3px, -7px);
+      }
+    }
   }
 }
 
@@ -153,17 +167,8 @@ li .exact-active  {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    transform: translateY(100%);
+    transform: translateY(0);
     @include transition-ease;
-
-    &__item {
-      transform: translateX(100vw);
-      @include transition-ease;
-    }
-
-    &.active {
-      transform: translateY(0);
-    }
   }
 }
 

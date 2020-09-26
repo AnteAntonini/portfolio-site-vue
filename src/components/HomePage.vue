@@ -4,7 +4,7 @@
       <h1 class="home__name">
         Ante <span class="home__name--last">Antonini</span>
       </h1>
-      <h2>
+      <h2 class="my-description">
         Student, Web Developer & Programmer
       </h2>
     </div>
