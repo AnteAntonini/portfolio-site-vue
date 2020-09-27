@@ -110,7 +110,7 @@ export default {
   }
 
   &__items {
-    width: 50vw;
+    width: 60vw;
     margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

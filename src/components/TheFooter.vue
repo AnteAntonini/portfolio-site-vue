@@ -14,7 +14,7 @@
           <i class="fab fa-github fa-2x"></i>
         </a>
       </div>    
-        <span>&copy; Copyright 2020</span>
+        <span id="copy">&copy; Copyright 2020</span>
     </footer>
 </template>
 

@@ -5,22 +5,22 @@
     </div>
     <nav class="nav" :class="{active: isActive}">
       <ul class="menu-nav" :class="{active: isActive}">
-        <li class="menu-nav__item" @click="open">
+        <li class="menu-nav__item" >
           <router-link tag="a" :to="{name: 'HomePage'}" class="menu-nav__link">
             Home
           </router-link>
         </li>
-        <li class="menu-nav__item" @click="open">
+        <li class="menu-nav__item" >
           <router-link :to="{name: 'AboutPage'}" class="menu-nav__link">
             About Me
           </router-link>
         </li>
-        <li class="menu-nav__item" @click="open">
+        <li class="menu-nav__item" >
           <router-link :to="{name: 'ProjectsPage'}" class="menu-nav__link">
             My Projects
           </router-link>
         </li>
-        <li class="menu-nav__item" @click="open">
+        <li class="menu-nav__item" >
           <router-link :to="{name: 'ContactPage'}" class="menu-nav__link">
             Contact Me
           </router-link>

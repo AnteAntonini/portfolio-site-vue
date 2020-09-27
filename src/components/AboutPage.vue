@@ -13,13 +13,13 @@
                     <h2>2020 - Current</h2>
                     <h3>Google</h3>
                     <h6>Front End Developer</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, temporibus.</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="job-list-card">
                     <h2>2020 - Current</h2>
                     <h3>Google</h3>
                     <h6>Front End Developer</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, temporibus.</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@ export default {
         display: flex;
         flex-direction: column; 
         justify-content: flex-end;
-        height: 40vh;
+        height: 35vh;
         width: 100%;
         margin-bottom: 2em;
         line-height: 1;
@@ -56,7 +56,7 @@ p{
     font-size: 1.5rem;
 }
 .jobs{
-    height: 50vh;
+    height: 53vh;
     width: 100%;
     background: rgb(44, 42, 42);
     display: inline-block;
@@ -74,17 +74,17 @@ p{
         background: rgb(35, 33, 33);
         align-items: flex-start;
         padding: 0.5rem;
-        border-bottom: 5px solid $secondary-color;
+        border-bottom: 2px solid $secondary-color;
     }
     p{
         font-size: 1rem;
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: $secondary-color;
     }
     h3 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 .text-secondary{

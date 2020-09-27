@@ -17,6 +17,29 @@
   }
 }
 
+@include media-about-sm {
+  .about-bio-text {
+    p {
+      font-size: 1rem !important;
+    }
+  }
+  #copy {
+    font-size: 0.9rem;
+  }
+  .desc {
+    font-size: 0.7rem !important;
+  }
+
+  .social-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .fab {
+    font-size: 1rem !important;
+  }
+}
+
 @include media-sm {
   .menu-bnt {
     visibility: visible;
@@ -24,6 +47,13 @@
 
   .nav {
     display: none;
+  }
+
+  .projects__items {
+    margin: 5rem auto 0 auto !important;
+    width: 40vw !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
   }
 }
 
